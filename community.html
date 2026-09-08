@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community — Aeris Client</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="grid"></div>
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-icon"><img src="logo.png" alt="Aeris logo"></span><span>Aeris</span><span class="brand-tag">CLIENT</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="community.html" class="active">Community</a>
+    </nav>
+    <a class="nav-button" href="pricing.html">Get Started</a>
+  </header>
+  <main class="community-page">
+    <div class="community-icon">◉</div>
+    <span class="pill"><span></span> COMMUNITY</span>
+    <h1>Hang out with<br><em>the Aeris community.</em></h1>
+    <p class="lead">Get announcements, support, updates, and meet other people using Aeris.</p>
+    <a id="discord-button" class="button button-primary" href="#">Join Discord <span>↗</span></a>
+    <p class="fine-print">Change the Discord URL in <code>community.html</code> inside <code>DISCORD_URL</code>.</p>
+  </main>
+  <script>
+    // Change this URL to your Discord invite.
+    const DISCORD_URL = 'https://discord.gg/YOUR-INVITE';
+    const discordButton = document.getElementById('discord-button');
+    discordButton.href = DISCORD_URL;
+    discordButton.target = '_blank';
+    discordButton.rel = 'noopener noreferrer';
+  </script>
+</body>
+</html>
