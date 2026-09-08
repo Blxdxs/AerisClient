@@ -649,26 +649,3 @@ body::before{
   width:100%;height:100%;object-fit:contain;display:block;border-radius:5px;
   filter:drop-shadow(0 0 7px rgba(110,190,255,.25));
 }
-
-/* Dashboard logo: larger and transparent so the source image stands on its own. */
-.mini-logo{
-  width:38px;
-  height:38px;
-  min-width:38px;
-  min-height:38px;
-  padding:0 !important;
-  background:transparent !important;
-  border:0 !important;
-  box-shadow:none !important;
-  border-radius:8px;
-}
-.mini-logo img{
-  width:100%;
-  height:100%;
-  padding:0;
-  object-fit:contain;
-  background:transparent !important;
-  border-radius:8px;
-  filter:drop-shadow(0 0 10px rgba(115,180,255,.24));
-}
-.dash-brand{gap:10px}

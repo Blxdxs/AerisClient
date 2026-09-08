@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
   <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="grid"></div>
@@ -24,17 +24,14 @@
     <section class="price-card">
       <div><span class="price-label">AERIS LIFETIME</span><div class="price">$10 <small>USD</small></div><p>One-time payment · Lifetime access</p></div>
       <div class="price-features"><span>✓ Full client access</span><span>✓ All available features</span><span>✓ Future updates</span><span>✓ Community access</span></div>
-      <a id="discord-button" class="button button-primary price-button" href="#">Get Aeris <span>↗</span></a>
+      <a id="get-aeris" href="#" class="button button-primary price-button" target="_blank" rel="noopener noreferrer">Get Aeris <span>↗</span></a>
     </section>
-  </main>
+</main>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
     // Change this URL to your Discord invite.
     const DISCORD_URL = 'https://discord.gg/YOUR-INVITE';
-    const discordButton = document.getElementById('discord-button');
-    discordButton.href = DISCORD_URL;
-    discordButton.target = '_blank';
-    discordButton.rel = 'noopener noreferrer';
+    document.getElementById('get-aeris').href = DISCORD_URL;
   </script>
 </body>
 </html>
