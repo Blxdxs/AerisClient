@@ -24,11 +24,17 @@
     <section class="price-card">
       <div><span class="price-label">AERIS LIFETIME</span><div class="price">$10 <small>USD</small></div><p>One-time payment · Lifetime access</p></div>
       <div class="price-features"><span>✓ Full client access</span><span>✓ All available features</span><span>✓ Future updates</span><span>✓ Community access</span></div>
-      <a href="#" class="button button-primary price-button" onclick="showToast('Connect this button to your payment checkout.');return false;">Get Aeris <span>↗</span></a>
+      <a id="discord-button" class="button button-primary price-button" href="#">Get Aeris <span>↗</span></a>
     </section>
-    <p class="fine-print">The checkout button is a placeholder. Replace its link with your payment provider URL.</p>
   </main>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script>let t;function showToast(m){const e=document.getElementById('toast');e.textContent=m;e.classList.add('show');clearTimeout(t);t=setTimeout(()=>e.classList.remove('show'),2400)}</script>
+  <script>
+    // Change this URL to your Discord invite.
+    const DISCORD_URL = 'https://discord.gg/YOUR-INVITE';
+    const discordButton = document.getElementById('discord-button');
+    discordButton.href = DISCORD_URL;
+    discordButton.target = '_blank';
+    discordButton.rel = 'noopener noreferrer';
+  </script>
 </body>
 </html>
