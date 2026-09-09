@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aeris Client</title>
+  <meta name="description" content="Aeris Client — a clean SkyBlock client focused on speed, control, and automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="grid"></div>
+
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="Aeris home">
+      <span class="brand-icon"><img src="logo.png" alt="Aeris logo"></span>
+      <span>Aeris</span><span class="brand-tag">CLIENT</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="community.html">Community</a>
+    </nav>
+
+    <a class="nav-button" href="pricing.html">Get Started</a>
+  </header>
+
+  <main class="landing">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="pill"><span></span> BUILT FOR SKYBLOCK</div>
+        <h1>Play smarter.<br><em>Grind less.</em></h1>
+        <p class="lead">
+          Aeris gives you the tools to automate repetitive parts of SkyBlock
+          while keeping everything fast, clean, and easy to control.
+        </p>
+
+        <div class="hero-actions">
+          <a href="pricing.html" class="button button-primary">Start with Aeris <span>↗</span></a>
+          <a href="features.html" class="button button-text">Explore features <span>→</span></a>
+        </div>
+
+        <div class="mini-note"><span class="mini-dot"></span> Windows 10/11 · macOS 26+ · Linux</div>
+      </div>
+
+      <div class="visual" aria-label="Interactive Aeris UI preview">
+        <div class="halo"></div>
+
+        <div class="dashboard">
+          <div class="dash-top">
+            <div class="dash-brand"><span class="mini-logo"><img src="logo.png" alt=""></span><span>Aeris</span></div>
+            <div class="dash-status"><i></i><span id="dash-state">Ready</span></div>
+          </div>
+
+          <div class="dash-body">
+            <div class="side" aria-label="Module navigation">
+              <button class="side-item selected" data-module="overview">◫ <span>Overview</span></button>
+              <button class="side-item" data-module="farming">◈ <span>Farming</span></button>
+              <button class="side-item" data-module="mining">⌁ <span>Mining</span></button>
+              <button class="side-item" data-module="combat">✦ <span>Combat</span></button>
+              <button class="side-item" data-module="fishing">◉ <span>Fishing</span></button>
+              <button class="side-item" data-module="settings">⚙ <span>Settings</span></button>
+            </div>
+
+            <div class="panel">
+              <div class="panel-heading">
+                <div>
+                  <small id="panel-kicker">SESSION</small>
+                  <h2 id="panel-title">Overview</h2>
+                </div>
+                <span class="live" id="panel-status">READY</span>
+              </div>
+
+              <div class="metric-row">
+                <div class="metric">
+                  <span id="metric-one-label">Mode</span>
+                  <strong id="metric-one">Farming</strong>
+                </div>
+                <div class="metric">
+                  <span id="metric-two-label">State</span>
+                  <strong id="metric-two">Idle</strong>
+                </div>
+              </div>
+
+              <div class="chart">
+                <div class="chart-label"><span id="chart-label">Efficiency</span><strong id="chart-value">96.4%</strong></div>
+                <div class="bars" id="bars">
+                  <i style="height:34%"></i><i style="height:49%"></i><i style="height:42%"></i><i style="height:67%"></i><i style="height:58%"></i>
+                  <i style="height:78%"></i><i style="height:71%"></i><i style="height:91%"></i><i style="height:84%"></i><i style="height:96%"></i>
+                </div>
+              </div>
+
+              <div class="task">
+                <div><span class="task-kicker" id="task-kicker">CURRENT TASK</span><strong id="task-title">Garden rotation</strong></div>
+                <span class="task-progress" id="task-progress">74%</span>
+              </div>
+
+              <div class="quick-controls" id="quick-controls">
+                <button class="control-toggle on" data-setting="automation" aria-pressed="true">
+                  <span><b>Automation</b><small>Smart routines</small></span><i></i>
+                </button>
+                <button class="control-toggle on" data-setting="safety" aria-pressed="true">
+                  <span><b>Safety checks</b><small>Extra validation</small></span><i></i>
+                </button>
+                <button class="control-toggle" data-setting="notifications" aria-pressed="false">
+                  <span><b>Notifications</b><small>Desktop alerts</small></span><i></i>
+                </button>
+              </div>
+
+              <div class="panel-footer">
+                <span id="footer-help">Click a module to preview its controls.</span>
+                <button id="preview-action" class="small-action">Run preview</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-card float-top">
+          <span class="float-icon">✦</span>
+          <div><small>Automation</small><strong>Smart routines</strong></div>
+        </div>
+        <div class="float-card float-bottom">
+          <span class="float-icon">↯</span>
+          <div><small>Performance</small><strong>Low overhead</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
